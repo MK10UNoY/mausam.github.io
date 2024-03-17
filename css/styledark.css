@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Mechanical;
+    src: url('../MechanicalBoldCondensedOblique-0B3o.otf');
+    font-family: Lotuscoder;
+    src: url('../Lotuscoder-0WWrG.ttf');
+}
+body {
+    background: #002029;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: Mechanical;
+    background: url('../assets/dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.display {
+    margin-top: 2%;
+    width: 80vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-family: Mechanical;
+    /* background: linear-gradient(150deg,rgba(78, 78, 171, 0.906),rgb(88, 211, 53)); */
+    backdrop-filter: blur(9px) saturate(70%) hue-rotate(40deg);
+    box-shadow: 2px 2px 10px 5px #3a505b;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.mode{
+    background: #000;
+    height: 20%;
+    border-radius: 50px;
+    color: #f3f3f3;
+    padding: 5px;
+}
+
+.searchbar {
+    background-color: rgb(99, 97, 97);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(81, 80, 80);
+    border-radius: 33px;
+    box-shadow: 2px 2px 4px 1px #cbcbcb;
+    align-items: center;
+    justify-content: center;
+    font-family: Mechanical;
+}
+
+.searchbar input {
+    width: 80%;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    transition: 0.2s;
+    background-color: transparent;
+    font-family: Mechanical;
+    color: #f3f3f3;
+}
+.searchbar input::placeholder{
+    color: #fff0ff;
+}
+
+.searchbar input:focus {
+    border: none;
+    width: 75%;
+    outline: none;
+    font-style: BOLD;
+    font-size: 1.5em;
+    color: #0f0;
+    text-shadow: #0f0 0px 0px 2px;
+}
+.searchbar input:focus::placeholder{
+    color: #fff0ff;
+    text-shadow: none;
+}
+
+.cityselector {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 1;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    background: url('../assets/icons8-search.svg');
+    filter: invert() hue-rotate(190deg) saturate(200%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.cityname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(181, 238, 248);
+    text-shadow: #1a7169 0px 0px 15px;
+    font-family: Mechanical;
+}
+
+#cityname {
+    font-size: 4.5em;
+    font-family: Mechanical;
+    font-weight: 500;
+}
+
+#temp {
+    font-size: 4em;
+    font-family: Mechanical;
+    color: rgb(0, 140, 255);
+}
+
+
+.otherintel {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Mechanical;
+    align-items: center;
+    width: -webkit-fill-available;
+    color:#c2c1c1;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-shadow: #5f5e5e 0px 0px 5px;
+}
+#windspeed,#humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#humidity img{
+    filter:invert();
+}
+#windspeed img{
+    filter:invert();
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Mechanical;
+    src: url('../MechanicalBoldCondensedOblique-0B3o.otf');
+}
+body {
+    background: #002029;
+    display: block;
+    font-family: Mechanical;
+}
+
+.wrap {
+    background: linear-gradient(#00303d,#0d181b);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: max-content;
+}
+.cityselector{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.searchbar {
+    background-color: whitesmoke;
+    width: 70%;
+    display: flex;
+    border: 15px solid whitesmoke;
+    border-radius: 33px;
+    box-shadow: 2px 2px 10px 0px #272626;
+    align-items: center;
+    justify-content: center;
+    font-family: Mechanical;
+    color: #175566;
+}
+
+.searchbar input {
+    width: 90%;
+    border: none;
+    font-family: Mechanical;
+    font-size: 1.5em;
+    outline: none;
+    transition: 0.15s;
+    background-color: whitesmoke;
+    color: inherit;
+}
+
+.searchbar input:focus {
+    border: none;
+    width: 75%;
+    outline: none;
+    font-family: Mechanical;
+    font-style: BOLD;
+    font-size: 2em;
+    color: inherit;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.button img{
+    height: inherit;
+    width: inherit;
+}
+
+.display {
+    width: -webkit-fill-available;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(9px) saturate(190%) hue-rotate(49deg);
+    box-shadow: 0px 0px 5px 1px #6cbbe3;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.cityname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #64deff;
+    text-shadow: #2fffea67 0px 0px 5px;
+}
+
+#cityname {
+    font-size: 4.5em;
+    font-family: Mechanical;
+    font-weight: 500;
+}
+
+#temp {
+    font-size: 4em;
+    font-family: Mechanical;
+}
+
+
+.otherintel {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Mechanical;
+    align-items: center;
+    width: -webkit-fill-available;
+    color:#64deff;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#windspeed,#humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#humidity img{
+    filter: invert();
+}
+#windspeed img{
+    filter: invert();
+}
